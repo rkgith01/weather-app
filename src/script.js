@@ -21,7 +21,7 @@ async function getLocationAndDisplayWeather() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(async (position) => {
         const localLatitude = position.coords.latitude;
-        console.log({ localLatitude });
+        // console.log({ localLatitude });
         const localLongitude = position.coords.longitude;
         await fetchAndDisplayWeather(localLatitude, localLongitude);
       });
@@ -36,7 +36,7 @@ async function getLocationAndDisplayWeather() {
 async function fetchAndDisplayWeather(latitude, longitude) {
   try {
     const weatherInfo = await fetchWeatherData(latitude, longitude);
-    console.log({ weatherInfo });
+    // console.log({ weatherInfo });
 
     const localfeelLike = weatherInfo.main.feels_like;
     const locaCityCountry = weatherInfo.sys.country;
