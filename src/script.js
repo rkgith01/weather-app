@@ -4,8 +4,7 @@ let isCelsius = true;
 async function fetchWeatherData(latitude, longitude) {
   try {
     const response = await fetch(
-      `${api}api/current?lat=${latitude}&lon=${longitude}`,
-
+      `${api}api/current?lat=${latitude}&lon=${longitude}`
     );
     const data = await response.json();
     return data;
@@ -14,7 +13,6 @@ async function fetchWeatherData(latitude, longitude) {
     throw error;
   }
 }
-
 
 async function getLocationAndDisplayWeather() {
   try {
@@ -63,8 +61,6 @@ async function fetchAndDisplayWeather(latitude, longitude) {
   }
 }
 
-
-
 async function fetchAndDisplayCityWeather(cityName, latitude, longitude) {
   try {
     const cityWeatherInfo = await fetchWeatherData(latitude, longitude);
@@ -106,7 +102,7 @@ function toggleTemperatureUnit() {
     { name: "Delhi", lat: 28.6139, lon: 77.209 },
     { name: "Sydney", lat: -33.8688, lon: 151.2093 },
     { name: "Chicago", lat: 41.8781, lon: -87.6298 },
-    { name: "Toronto", lat: 43.65107, lon: -79.347015 }
+    { name: "Toronto", lat: 43.65107, lon: -79.347015 },
     // Add more cities here
   ];
   document.getElementById("city-list").innerHTML = "";
@@ -131,7 +127,7 @@ function show() {
     { name: "Delhi", lat: 28.6139, lon: 77.209 },
     { name: "Sydney", lat: -33.8688, lon: 151.2093 },
     { name: "Chicago", lat: 41.8781, lon: -87.6298 },
-    { name: "Toronto", lat: 43.65107, lon: -79.347015 }
+    { name: "Toronto", lat: 43.65107, lon: -79.347015 },
     // Add more cities here
   ];
 

@@ -18,10 +18,6 @@ This simple weather app allows you to check the current weather conditions in yo
 ## Favicons
  - Favicons used by favicons generator 
 
-## How to Run
-
-Simply open the `index.html` file in a web browser to start using the weather app. No additional setup is required.
-
 ## Credits
 
 - Weather data provided by [FreeCodeCamp Weather Proxy](https://weather-proxy.freecodecamp.rocks/).
